@@ -9,9 +9,19 @@ var getData = function(){
 	});
 }
 
+var searchCat = function searchCat(s){
+//    $.getJSON();
+};
+
 console.log("Updating on Interval");
 var interval = setInterval(getData,5000);
 
 $("#stop").click(function(){
 	clearInterval(interval);
+});
+
+$("#find").click(function(){
+    var data = document.getElementById("params").value;
+    console.log(data);
+    searchCat(data);
 });
