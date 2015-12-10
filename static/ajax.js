@@ -1,14 +1,10 @@
 console.log("HELLO (Javascript Loaded)");
 var cat = "http://random.cat/meow"
 
-var printresults = function(d){
-		console.log(d);
-};
-
 var getData = function(){
 	console.log("Getting new cat");
 	$.getJSON(cat,function(data){
-		console.log(data);
+		//console.log(data);
 		$("#cathere").attr("src",data['file']);
 	});
 }
