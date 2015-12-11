@@ -1,25 +1,49 @@
 <!doctype html>
 <html>
 	<head>
-		<style>
-		.red {color: #ff0000;}
-		.green {color: #00ff00;}
-		.blue {color: #0000ff;}
-		</style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <title> Cats 'R Us </title>
+	  <style src="index.css">
+	    p {
+	    font-family:'Times New Roman';
+	    font-size: 48px;
+	    color:maroon;
+	    }
+	    
+	    div.one {
+	    float:left;
+	    }
+	    
+	    div.two {
+	    float:right;
+	    }
+
+	    
+	  </style>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 
 	
 	<body>
-	  <textarea id="params">Enter criteria here</textarea>
+          <center>
+           <textarea id="params">Enter criteria here</textarea>
+           <br>
+           <button id="find">Search</button>
+          </center>
+
 	  <br>
-	  <button id="find">Search</button>
-		<br><br>
-		<img id="cathere" src="http://24.media.tumblr.com/tumblr_m4ljb9DFVq1roe4b7o1_1280.jpg" alt="this is where the cats go" width=500></img>
-		<br><br>
-		<img id="flickrhere" src="" alt="this is where the flickr stuff goes" width=500></img>
-		<br>
-		 <button id="stop">Stop!!!</button>
-		<script src="static/ajax.js"></script>
+	  <br>
+	  <div class="one">
+	    <img id="cathere" src="http://24.media.tumblr.com/tumblr_m4ljb9DFVq1roe4b7o1_1280.jpg" alt="this is where the cats go" width=500></img>
+	    <br>
+	    <center>
+	      <button id="stop">Stop!!!</button>
+	    </center>
+	  </div>
+
+	  <div class="two">
+	    <img id="flickrhere" src="" alt="this is where the flickr stuff goes" width=500></img>
+	  </div>
+
+	  <script src="static/ajax.js"></script>
 	</body>
 </html>
